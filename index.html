@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array</h1>
+    <script>
+        let  num1="Zeeshan"
+        let num2="Ali"
+        let num3= "Hashim"
+        //.....
+        let num1000="kashan";
+
+        //array==
+        let names = ["Ali , Zeeshan ,Hashim, kashan "]
+        console.log(names)
+        console.log([3])
+        console.log(names.length);
+
+        names.push("Sheeza")
+        names.push("Ali")
+        names.push("Hashim")
+
+        //start
+        names.unshift("farhan")
+        console.log(names);
+        console.log(names)
+        //last
+        names.pop()
+        console.log(names)
+        console.log(names.indexOf("Zeeshan"));
+        //first remove
+        names.shift()
+        console.log(names);
+        //function
+        function greet(){}
+        let myGreet = ()=>{
+            console.log("I am arrow function")
+        }
+        myGreet();
+         myGreet();
+          myGreet();
+           myGreet();
+
+           //function parameter
+           function parent(child){
+            console.log("parent")
+            child()
+           }
+           parent(()=> {
+            console.log("child")
+           });
+
+
+           //==============
+           let ages = [ 23, 25, 30 , 3, 2 ,6 ,10]; 
+
+           let updatedAges = ages.filter((ag)=>{
+            if (ag > 18){
+                return ag;
+            }
+           });
+
+           console.log(updatedAges);
+           ages.map((age)=> {
+            console.log(age*2);
+           });
+
+
+
+
+    </script>
+</body>
+</html>
